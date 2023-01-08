@@ -1,9 +1,6 @@
 from pprint import pprint
 import requests
 import json
-import yadisk
-y = yadisk.YaDisk(token='y0_AgAAAAAmsKYIAAj5WgAAAADZAg89z4L6mAgKStSrAiiZ7ES4iEbe5II')
-print(y.check_token())
 
 class VkUser:
 	url = 'https://api.vk.com/method/'
@@ -57,16 +54,10 @@ class VkUser:
 										# 	print(f.read())
 		return d
 
-access_token = 'vk1.a.XL3Ool7VAiJUxtCgbI31PnZLErL89cb3LfvoZq5F0V-IANd4jpr88X69AczLTqhYh1uYcTVb9XVcU9PktfTUiZp2Wvz22oyu--jzQobAX-nuZCjmwEUJWva4u6W5zbcqtbv0ycwahdjZCptP6fux8ZafVm5rU9lKu8Fv3pyYd1wVDI3-_lJDJ4gklblcqYKjvpSYrHf9Xfh6hIPImMrCpw'
+access_token = ''
 
 vk_client = VkUser(access_token, '5.131')
 pprint(vk_client.get_photo())
-
-# print(d)
-
-
-# # y.mkdir("\img") # Создать папку
-# y.upload(d,"\img") # Загружает файл 
 
 class YaUploader:
 	def __init__(self, token: str):
@@ -107,7 +98,7 @@ if __name__ == '__main__':
 	# Получить путь к загружаемому файлу и токен от пользователя
 	disk_file_path = 'img.txt'
 	filename = 'img.txt'
-	token = 'y0_AgAAAAAmsKYIAADLWwAAAADWE6kDxd680IDWSQWGpzEmYjWNBBlpdZw'
+	token = ''
 	uploader = YaUploader(token)
 	result = uploader.upload_file_to_disk(disk_file_path, 'img.txt')
 
