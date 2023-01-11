@@ -95,7 +95,7 @@ class VkUser:
 										d.append(photo_information)										
 										params_upload = {'path': path, 'url': data}
 										if __name__ == '__main__':
-											token = 'y0_AgAAAAAmsKYIAADLWwAAAADWE6kDxd680IDWSQWGpzEmYjWNBBlpdZw'
+											token = ''
 											uploader = YaUploader(token)
 											result = uploader.upload_photo_to_disk(params_upload)
 											
@@ -103,13 +103,13 @@ class VkUser:
 					f.write(json.dumps(d))
 				disk_file_path = 'list_of_photos.json'
 				filename = 'list_of_photos.json'
-				token = 'y0_AgAAAAAmsKYIAADLWwAAAADWE6kDxd680IDWSQWGpzEmYjWNBBlpdZw'								
+				token = ''								
 				uploader = YaUploader(token)
 				res = uploader.upload_file_to_disk(disk_file_path, 'list_of_photos.json')
 
 		return 'Success'
 
-access_token = 'vk1.a.XL3Ool7VAiJUxtCgbI31PnZLErL89cb3LfvoZq5F0V-IANd4jpr88X69AczLTqhYh1uYcTVb9XVcU9PktfTUiZp2Wvz22oyu--jzQobAX-nuZCjmwEUJWva4u6W5zbcqtbv0ycwahdjZCptP6fux8ZafVm5rU9lKu8Fv3pyYd1wVDI3-_lJDJ4gklblcqYKjvpSYrHf9Xfh6hIPImMrCpw'
+access_token = ''
 
 vk_client = VkUser(access_token, '5.131')
 pprint(vk_client.get_photo())
