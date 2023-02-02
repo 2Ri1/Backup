@@ -16,7 +16,7 @@ if __name__ == '__main__':
 	id = int(input('Введите id пользователя: '))
 	screen_name = str(input('Введите screen_name пользователя: '))
 	count = int(input('Введите желаемое количество фотографий: '))	
-	access_token = 'vk1.a.XL3Ool7VAiJUxtCgbI31PnZLErL89cb3LfvoZq5F0V-IANd4jpr88X69AczLTqhYh1uYcTVb9XVcU9PktfTUiZp2Wvz22oyu--jzQobAX-nuZCjmwEUJWva4u6W5zbcqtbv0ycwahdjZCptP6fux8ZafVm5rU9lKu8Fv3pyYd1wVDI3-_lJDJ4gklblcqYKjvpSYrHf9Xfh6hIPImMrCpw'
+	access_token = ''
 	vk_client = VkUser(access_token, '5.131')
 	if id == 0:		
 		user_id = vk_client.user_id(screen_name)
