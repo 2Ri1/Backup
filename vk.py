@@ -3,9 +3,8 @@ import configparser
 from ya_disk import YaUploader
 from create_json import create_json
 from datetime import datetime
-# viviyan_14
-# 333365842
-# obulygin91
+
+
 class VkUser:
 	
 	url = 'https://api.vk.com/method/'
